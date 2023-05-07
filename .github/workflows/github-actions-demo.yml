@@ -1,4 +1,4 @@
-name: WSB
+name: GitHub
 
 on:
   push:
