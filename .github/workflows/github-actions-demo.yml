@@ -1,4 +1,4 @@
-name: GitHub
+name: WSB
 
 on:
   push:
@@ -24,6 +24,7 @@ jobs:
           python-version: '3.8'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Install Pylint
+        run: pip install pylint
       - name: Run pylint
         run: pylint app.py
-
